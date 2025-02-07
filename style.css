@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Pixellet';
+    src: url('fonts/Pixellet.ttf') format('truetype');
+}
+body {
+    font-family: 'Pixellet', sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #f8f8f2;
+    padding: 20px;
+}
+
+h1, p, input, button {
+    font-family: 'Pixellet', sans-serif;
+}
+
+.pixel-font {
+    font-family: 'Pixellet', sans-serif;
+    font-size: 28px;
+}
+
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    margin: auto;
+    border: 4px solid #ffcc00;
+}
+
+.container {
+    position: relative;
+}
+
+.instagram-container {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+}
+
+.instagram-container a {
+    color: #ffcc00;
+    font-size: 50px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.instagram-container a:hover {
+    color: #ffdd33;
+    transform: scale(1.2);
+}
+
+
+.countdown {
+    font-size: 18px;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#countdown-timer {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+h1 {
+    color: #ffcc00;
+    font-size: 24px;
+}
+
+input {
+    font-family: 'Pixellet', sans-serif;
+    padding: 10px;
+    width: 90%;
+    margin: 10px 0;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    background: #444;
+    color: #ffcc00;
+    text-align: center;
+}
+
+button {
+    font-family: 'Pixellet', sans-serif;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    background-color: #ffdd33;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #222;
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px solid #ffcc00;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.close {
+    color: #ffcc00;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ffdd33;
+}
+
+#modalMessage {
+    font-size: 14px;
+    color: #00ffcc;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .pixel-font {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 12px;
+    }
+
+    #modalMessage {
+        font-size: 12px;
+    }
+
+    .instagram-container {
+        bottom: -5px;
+        right: 5px;
+    }
+
+    .instagram-container a {
+        font-size: 30px;
+    }
+}

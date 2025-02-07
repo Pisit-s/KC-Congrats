@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC-Congrats 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 <span class="pixel-font">Congratulations!</span>  🎓</h1>
+        <p>รอเฉลย Code วันที่ 18</p>
+        <div class="countdown">
+            <p>เหลือเวลาอีก</p>
+            <p id="countdown-timer"></p>
+        </div>        
+        <input type="text" id="nameInput" placeholder="Secret code">
+        <button onclick="showMessage()">ส่งมาไรมา</button>
+        <p id="errorMessage" class="error"></p>
+        <div class="instagram-container">
+            <a href="https://www.instagram.com/pisit.com.pdf.jpg.mp3.in.ac.th/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
